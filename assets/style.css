@@ -1,0 +1,9 @@
+body{
+    margin: 15px;
+}
+
+.jumbotron{
+    background-color: #FF7500;
+    text-align: center;
+    color: aliceblue;
+}

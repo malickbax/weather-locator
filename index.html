@@ -1,8 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Weather Locator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to Bootstrap library and CSS sheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather Dashboard</title>
 </head>
+
+<body>
+<!-- Jumbotron to display main platform name: Weathe Dashboard -->
+
+    <div class="jumbotron">
+        <h1>Weather Dashboard</h1>
+    </div>
+<!-- Jumbotron to ends here -->
+
+<!-- Search city area -->
+    <div class="row">
+        <div class="column col-3">
+<!-- Form where user needs to enter city name -->
+            <form>
+                <label class="text-primary">Search by City</label>
+                <input class="form-control my-2 text-primary" type="search" placeholder="Enter city name here" id="city-input">
+                <button class="btn btn-outline-primary my-2" style="width: 100%" type="submit" id="search-button">Enter City</button>
+                <button class="btn btn-outline-primary my-2" style="width: 100%" type="submit" id="clear-button">Clear History</button>
+                <div class="border-top border-primary" id="past-searches">
+                    <button class="btn btn-primary my-2 past-city" style="width: 100%"></button>
+                </div>
+            </form>
+
+<!-- Form ends here -->
+        </div>
+<!-- Search city area ends-->
+
+<!-- Display of 5 day forecast starts here -->
+
+        <div class="column col-9">
+            <div class="row" id="currentConditions"></div>
+            <div class="row" id="fiveDayForecastHeader"></div>
+            <div class="d-flex flex-row flex-wrap justify-content-between" id="fiveDayForecast"></div>
+        </div>
+    </div>
+<!-- Display of 5 day forecast ends here -->
+
+<!-- Link to external libraries and JS file listed below -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
