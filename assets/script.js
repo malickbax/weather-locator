@@ -7,6 +7,7 @@ var pastSearchedCitiesEl = $('#past-searches');
 
 // use Open Weather 'One Call API' to get weather based on city coordinates
 // Weather is displayed in metric system (KM, Celcius, international date format DD/MM/YYYY)
+// CREDIT: get weather function below was done with the help of Brams Lo 
 function getWeather(data) {
 
     var requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${data.lat}&lon=${data.lon}&exclude=minutely,hourly,alerts&units=metric&appid=${myAPIKey}`
@@ -69,6 +70,7 @@ function getWeather(data) {
 
 
 // Display forecast on the main page 
+// CREDIT: variables below were made with the help of Brams Lo 
             var fiveDayForecastHeaderEl = $("#fiveDayForecastHeader");
             var fiveDayHeaderEl = $("<h2>");
             fiveDayHeaderEl.text("5-Day Forecast:");
@@ -185,6 +187,7 @@ function handleCityFormSubmit (event) {
 }
 
 //Reload page for previous city when button is clicked
+// CREDIT: function below was done with the help of Brams Lo 
 function getPastCity (event) {
     var element = event.target;
     if (element.matches(".past-city")) {
