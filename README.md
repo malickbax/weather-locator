@@ -5,8 +5,5 @@
 # Deployed Website Link
 - https://malickbax.github.io/weather-locator/
 
-# GitHub repository link
-- https://github.com/malickbax/weather-locator (main branch)
-
 # Screenshot 
 - ![Homepage screenshot](./assets/images/Screenshot%20.png) 
