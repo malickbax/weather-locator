@@ -13,7 +13,7 @@ When I click on a city in the search history, I am again presented with current 
 - https://malickbax.github.io/weather-locator/
 
 ## Screenshot 
-- ![Homepage screenshot](./assets/images/Screenshot%20.png) 
+- ![Homepage screenshot](./assets/images/Screenshot%20.png)
 
 ## Tests
 - No test is required. Application is deployed and ready for usage.
